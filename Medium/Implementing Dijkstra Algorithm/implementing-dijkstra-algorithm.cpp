@@ -25,7 +25,7 @@ class Solution
             int edgeWeight = neighbor[1];
 
             if (dis + edgeWeight < dist[adjNode]) {
-                st.erase({dist[adjNode], adjNode});
+                // st.erase({dist[adjNode], adjNode});
                 dist[adjNode] = dis + edgeWeight;
                 st.insert({dist[adjNode], adjNode});
             }
